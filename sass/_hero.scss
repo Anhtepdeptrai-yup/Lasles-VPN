@@ -1,0 +1,19 @@
+.hero{
+    &-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-content{
+        width: 100%;
+        max-width: 555px;  
+        color: #0B132A;
+        font-size: 50px;
+        font-family: $font;
+    }
+
+    &-image{
+        flex-shrink: 0;
+    }
+}
