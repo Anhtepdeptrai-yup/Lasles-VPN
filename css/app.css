@@ -108,6 +108,7 @@ body {
 }
 .hero-image {
   flex-shrink: 0;
+  max-width: 500px;
 }
 
 /*# sourceMappingURL=app.css.map */
