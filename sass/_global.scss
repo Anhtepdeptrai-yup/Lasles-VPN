@@ -16,3 +16,48 @@ body{
     color: $text-color;
     font-weight: 400;
 }
+
+.button{
+    display: inline-block;
+    padding: 13px 45px;
+    border-radius: 100rem;
+    font-family: $font;
+    line-height: 1;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+
+    &--primary{
+        font-weight: 700;
+        background-color: $primary-color;
+        color: white;
+    }
+
+    &--outline{
+        background-color: transparent;
+        color: $primary-color;
+        font-weight: 500;
+        border: 1px solid $primary-color;
+    }
+
+    &--rounded{
+        border-radius: 10px;
+        padding: 17.5px 65px;
+        position: relative;
+        &:after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            height: 100%;
+            width: 90%;
+            border-radius: 10px;
+            background: rgba(245, 56, 56, 0.35);
+            filter: blur(27px);
+            transform: translate(-50%, 50%);
+            z-index: -1;
+        }
+    }
+
+}

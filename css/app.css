@@ -56,6 +56,47 @@ body {
   font-weight: 400;
 }
 
+.button {
+  display: inline-block;
+  padding: 13px 45px;
+  border-radius: 100rem;
+  font-family: "Rubik", san-serif;
+  line-height: 1;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.button--primary {
+  font-weight: 700;
+  background-color: #F53838;
+  color: white;
+}
+.button--outline {
+  background-color: transparent;
+  color: #F53838;
+  font-weight: 500;
+  border: 1px solid #F53838;
+}
+.button--rounded {
+  border-radius: 10px;
+  padding: 17.5px 65px;
+  position: relative;
+}
+.button--rounded:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 90%;
+  border-radius: 10px;
+  background: rgba(245, 56, 56, 0.35);
+  filter: blur(27px);
+  transform: translate(-50%, 50%);
+  z-index: -1;
+}
+
 .header {
   padding-top: 50px;
   padding-bottom: 90px;
@@ -98,17 +139,28 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 0 40px;
 }
 .hero-content {
   width: 100%;
   max-width: 555px;
   color: #0B132A;
-  font-size: 50px;
-  font-family: "Rubik", san-serif;
 }
 .hero-image {
-  flex-shrink: 0;
-  max-width: 500px;
+  position: absolute;
+  top: 50%;
+  transform: translate(40px, -50%);
+  right: 0;
+}
+.hero-heading {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+.hero-desc {
+  line-height: 1.875;
+  margin-bottom: 50px;
 }
 
 /*# sourceMappingURL=app.css.map */
