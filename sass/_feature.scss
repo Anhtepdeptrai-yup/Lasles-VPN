@@ -1,0 +1,12 @@
+.feature{
+    &-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 0 170px;
+    }
+
+    &-image{
+        margin-left: 184px;
+    }
+}

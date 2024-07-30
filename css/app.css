@@ -97,6 +97,11 @@ body {
   z-index: -1;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #0B132A;
+  font-weight: bold;
+}
+
 .header {
   padding-top: 50px;
   padding-bottom: 90px;
@@ -135,11 +140,15 @@ body {
   color: inherit;
 }
 
+.hero {
+  padding-bottom: 100px;
+}
 .hero-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 0 40px;
+  position: relative;
 }
 .hero-content {
   width: 100%;
@@ -161,6 +170,53 @@ body {
 .hero-desc {
   line-height: 1.875;
   margin-bottom: 50px;
+}
+
+.intro {
+  margin-bottom: 95px;
+}
+.intro-container {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 37px 0;
+  box-shadow: 0 42px 114px 0 rgba(13, 16, 37, 0.07);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  min-height: 200px;
+}
+.intro-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-size: 20px;
+}
+.intro-item:nth-child(2) {
+  border-left: 2px solid #EEEFF2;
+  border-right: 2px solid #EEEFF2;
+}
+.intro-title {
+  font-size: 25px;
+  line-height: 1.2;
+  margin-bottom: 5px;
+}
+.intro-text {
+  color: #4F5665;
+  font-family: Rubik;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.feature-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 0 170px;
+}
+.feature-image {
+  margin-left: 184px;
 }
 
 /*# sourceMappingURL=app.css.map */
