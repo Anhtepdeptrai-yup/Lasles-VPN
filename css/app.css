@@ -54,6 +54,7 @@ body {
   font-family: "Rubik", san-serif;
   color: #4F5665;
   font-weight: 400;
+  background-color: white;
 }
 
 .button {
@@ -100,6 +101,16 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color: #0B132A;
   font-weight: bold;
+}
+
+.heading {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 1.4285714286;
+}
+
+.text {
+  line-height: 1.875;
 }
 
 .header {
@@ -209,14 +220,85 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.5;
 }
 
+.feature {
+  padding-bottom: 130px;
+}
 .feature-container {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   gap: 0 170px;
 }
-.feature-image {
-  margin-left: 184px;
+.feature-desc {
+  margin-bottom: 23px;
+}
+.feature-title {
+  color: #0B132A;
+  font-family: Rubik;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 50px; /* 142.857% */
+  margin-bottom: 20px;
+}
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  margin-bottom: 21px;
+  font-size: 14px;
+}
+.feature-list {
+  list-style-type: none;
+}
+
+.plan {
+  padding: 80px 0 150px;
+  background-color: #F8F8F8;
+}
+.plan-header {
+  max-width: 555px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+.plan-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0 50px;
+  margin-bottom: 176px;
+}
+.plan-item {
+  border-radius: 10px;
+  border: 2px solid #dddddd;
+  background: #FFF;
+  padding: 80px 50px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.plan-image img {
+  margin: 0 auto 30px;
+}
+.plan-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.plan-details {
+  margin-bottom: 50px;
+}
+.plan-info {
+  display: flex;
+  align-items: center;
+  gap: 0 25px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 2.1428571429;
+}
+.plan-price {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=app.css.map */
