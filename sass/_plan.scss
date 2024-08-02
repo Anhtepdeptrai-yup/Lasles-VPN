@@ -52,6 +52,16 @@
         font-size: 25px;
         font-weight: 500;
         margin-bottom: 30px;
+        margin-top: auto;
+    }
+
+    &-item.is-active,
+    &-item:hover{
+        border-color: $primary-color;
+        .button{
+            background-color: $primary-color;
+            color: white;
+        }
     }
     
 }

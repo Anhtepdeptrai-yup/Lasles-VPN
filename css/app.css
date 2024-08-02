@@ -82,9 +82,11 @@ body {
 .button--rounded {
   border-radius: 10px;
   padding: 17.5px 65px;
+}
+.button--shadow {
   position: relative;
 }
-.button--rounded:after {
+.button--shadow:after {
   content: "";
   position: absolute;
   top: 0;
@@ -95,22 +97,14 @@ body {
   background: rgba(245, 56, 56, 0.35);
   filter: blur(27px);
   transform: translate(-50%, 50%);
-  z-index: -1;
+  z-index: 1;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #0B132A;
-  font-weight: bold;
-}
-
-.heading {
-  font-weight: 500;
-  font-size: 35px;
-  line-height: 1.4285714286;
-}
-
-.text {
-  line-height: 1.875;
+.boxed {
+  max-width: 555px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .header {
@@ -299,6 +293,43 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 25px;
   font-weight: 500;
   margin-bottom: 30px;
+  margin-top: auto;
+}
+.plan-item.is-active, .plan-item:hover {
+  border-color: #F53838;
+}
+.plan-item.is-active .button, .plan-item:hover .button {
+  background-color: #F53838;
+  color: white;
+}
+
+.network .heading {
+  max-width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.network-image {
+  margin-top: 155px;
+}
+
+.heading {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 1.4285714286;
+  margin-bottom: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #0B132A;
+  font-weight: bold;
+}
+
+.text {
+  line-height: 1.875;
+}
+
+.text-medium {
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=app.css.map */
