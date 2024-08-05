@@ -1,4 +1,5 @@
 .customer{
+    padding-bottom: 65px;
     .boxed{
         margin-bottom: 60px;
     }
@@ -7,4 +8,48 @@
         margin-left: auto;
         margin-right: auto;
     }
+
+    &-list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0 50px;
+    }
+
+    &-item{
+        border-radius: 10px;
+        border: 2px solid $grey-dark-color;
+        background: #FFF;
+        padding: 36.5px 30px 30px 30px;
+    }
+
+    &-top{
+        margin-bottom: 20px;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-avatar{
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 100rem;
+    }
+
+    &-info{
+        display: flex;
+        align-items: center;
+        gap: 0 20px;
+    }
+
+    &-rating{
+        display: flex;
+        align-items: center;
+        gap: 0 10px;
+    }
+
+    &-name, &-location{
+        line-height: 1;
+    }
+
 }
